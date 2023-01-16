@@ -81,6 +81,7 @@ namespace TicariOtomasyon
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // groupControl1
             // 
@@ -121,6 +122,7 @@ namespace TicariOtomasyon
             this.btnGuncelle.Size = new System.Drawing.Size(248, 48);
             this.btnGuncelle.TabIndex = 23;
             this.btnGuncelle.Text = "GUNCELLE";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -132,7 +134,7 @@ namespace TicariOtomasyon
             this.btnSil.Size = new System.Drawing.Size(248, 48);
             this.btnSil.TabIndex = 22;
             this.btnSil.Text = "SIL";
-            this.btnSil.Click += new System.EventHandler(this.simpleButton2_Click);
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnKaydet
             // 
@@ -144,6 +146,7 @@ namespace TicariOtomasyon
             this.btnKaydet.Size = new System.Drawing.Size(248, 48);
             this.btnKaydet.TabIndex = 21;
             this.btnKaydet.Text = "KAYDET";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // rchDetay
             // 
@@ -278,7 +281,6 @@ namespace TicariOtomasyon
             this.labelControl2.Size = new System.Drawing.Size(43, 29);
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Ad :";
-            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // txtAd
             // 
@@ -327,6 +329,7 @@ namespace TicariOtomasyon
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmUrunler";
             this.Text = "URUNLER";
+            this.Load += new System.EventHandler(this.FrmUrunler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
