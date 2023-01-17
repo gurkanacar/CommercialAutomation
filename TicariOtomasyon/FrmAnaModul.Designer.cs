@@ -1,7 +1,7 @@
 ﻿
 namespace TicariOtomasyon
 {
-    partial class Form1
+    partial class FrmAnaModul
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace TicariOtomasyon
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaModul));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnUrunler = new DevExpress.XtraBars.BarButtonItem();
             this.btnStoklar = new DevExpress.XtraBars.BarButtonItem();
@@ -108,6 +108,7 @@ namespace TicariOtomasyon
             this.btnMusteriler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMusteriler.ItemAppearance.Normal.Options.UseFont = true;
             this.btnMusteriler.Name = "btnMusteriler";
+            this.btnMusteriler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMusteriler_ItemClick);
             // 
             // btnFirmalar
             // 
@@ -237,16 +238,16 @@ namespace TicariOtomasyon
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // Form1
+            // FrmAnaModul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(this.ribbonControl1);
-            this.Name = "Form1";
+            this.IsMdiContainer = true;
+            this.Name = "FrmAnaModul";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-         //   this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
